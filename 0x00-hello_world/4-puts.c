@@ -4,8 +4,10 @@
  * return: 0
  * Discription: this function prints out strings
  */
-int main(void)
+void  main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	char JOSHUA[] = "\"Programming is like building a multilingual puzzle"
+
+	puts(JOSHUA);
 	return (0);
 }
