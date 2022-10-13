@@ -1,7 +1,9 @@
 #include<stdio.h>
 /**
- * This is a function that prints main
- * */
+ * main - puts"\"Programming is like building a multilingual puzzle"
+ * return: 0
+ * Discription: this function prints out strings
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
