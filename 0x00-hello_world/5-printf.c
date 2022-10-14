@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main - Entry point of the program
- * return: 0 if output is valid, else non-zero output 
+ * main - This function prints out the strings
+ * Return: zero if output is valid if not else non-zero output
  */
 int main(void)
 {
