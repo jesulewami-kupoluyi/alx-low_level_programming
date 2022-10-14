@@ -1,9 +1,7 @@
 #include<stdio.h>
 /**
- * description
- * this program uses printf
- * main - prints output
- * return:0 
+ * main - Entry point of the program
+ * return: 0 if output is valid, else non-zero output 
  */
 int main(void)
 {
