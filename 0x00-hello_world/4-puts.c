@@ -5,6 +5,7 @@
  * Description: this function prints out strings
  */
 int  main(void)
+{
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
