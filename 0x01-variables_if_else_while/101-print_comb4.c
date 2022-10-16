@@ -7,22 +7,26 @@
  */
 int main(void)
 {
-	int n;
-	int m;
-	int j;
+	int n, m, j;
 
-	for (n = 0; n < 8; n++)
+	for (n = '0'; n <= '8'; n++)
 	{
-		for (m = n + 1; m  < 9; m++)
+		for (m = '0'; m  <= '9'; m++)
 		{
-			for (j = m + 1; j < 10; j++)
-				putchar((n % 10) + '0');
-				putchar((m % 10) + '0');
-				putchar((j % 10) + '0');
-			if (n == 7 && m == 8 && j == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+			for (j = '0'; j <= '9'; j++)
+			{
+				if (n < m && m < j)
+				{
+					putchar(n);
+					putchar(m);
+					putchar(j);
+					if (n != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
 	}
 	return (0);
