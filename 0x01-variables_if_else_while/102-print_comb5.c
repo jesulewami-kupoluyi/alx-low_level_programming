@@ -7,26 +7,34 @@
  */
 int main(void)
 {
-	int n, m;
+	int x, y, z, q;
 
-	for (n = 0; m <= 99; n++)
+	for (x = 48; x <= 57; x++)
 	{
-		for (n = m; m <= 99; m++)
+		for (y = 48; y <= 57; y++)
 		{
-			if (n != m)
+			for (z = 48; z <= 57; z++)
 			{
-			putchar(m / 10 + 48);
-			putchar(m % 10 + 48);
-			putchar(',');
-			putchar(n / 10 + 48);
-			putchar(n % 10 + 48);
-			{
-				if (m * 100 + n != 9899)
+				for (q = 48; q <= 57; q++)
 				{
+				if (((z + q) > (x + y) && z >= x) || x < z)
+				{
+					putchar(x);
+					putchar(y);
+					putchar(' ');
+					putchar(z);
+					putchar(q);
+					if (x + y + z + q == 227 && x == 7)
+					{
+					break;
+					}
+					else
+					{
 					putchar(',');
 					putchar(' ');
+					}
 				}
-			}
+				}
 			}
 		}
 	}
