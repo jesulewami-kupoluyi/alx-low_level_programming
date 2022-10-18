@@ -4,14 +4,15 @@
  * main -Entry program.
  * Return:0 if true.
  */
+void print_alphabet(void);
 int main(void)
 {
 	char n;
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		putchar(n);
+		_putchar(n);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }

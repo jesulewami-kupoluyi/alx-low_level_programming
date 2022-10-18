@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * main -Entry program.
  * Return:0 if true
