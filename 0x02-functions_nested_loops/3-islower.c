@@ -1,19 +1,25 @@
 #include<unistd.h>
 #include"main.h"
 /**
- * _islower(int c) -Entry program.
+ * _islower -Entry program
+ * @c:integar value
  * Return: 1 if true otherwise 0
  */
 int _islower(int c)
 {
-	int c;
+	char n;
+	int result = 0;
 
-	if (c = 'a';  <= 'z')
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		return (1);
+		if (i == c)
+	{
+		result = 1;
 	}
 	else
 	{
-		return (0);
+		result = 0;
 	}
+	}
+	return (result);
 }
