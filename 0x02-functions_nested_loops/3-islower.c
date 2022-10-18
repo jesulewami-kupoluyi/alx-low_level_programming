@@ -12,7 +12,7 @@ int _islower(int c)
 
 	for (n = 'a'; n <= 'z'; n++)
 	{
-		if (i == c)
+		if (n == c)
 	{
 		result = 1;
 	}
