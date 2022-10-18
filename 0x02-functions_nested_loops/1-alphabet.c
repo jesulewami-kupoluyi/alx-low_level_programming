@@ -1,8 +1,8 @@
 #include "main.h"
 #include<unistd.h>
 /**
- * main -Entry program.
- * Return:0 if true.
+ * print_alphabet -Entry program.
+ * Return:void.
  */
 void print_alphabet(void)
 {
