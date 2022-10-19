@@ -6,13 +6,16 @@
  */
 int _isalpha(int c)
 {
-	int result = 0;
-	char n;
-
-	for (n = 'a'; n <= 'z'; n = 'A'; n <= 'Z'; n++)
+	if  (c = 'a'; c <= 'z'; n++)
 	{
-		if (n == c)
-		 result = 1;
+		 return (1);
 	}
-	return (result);
+	else if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
