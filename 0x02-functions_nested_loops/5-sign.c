@@ -6,16 +6,19 @@
  */
 int print_sign(int n)
 {
-	if (n >= 'a' && n <= 'z')
+	if (n > 0)
 	{
+		_putchar('+');
 		return (1);
 	}
-	else if (n >= 'A' && n <= 'Z')
+	else if (n < 0)
 	{
+		_putchar('-');
 		return (1);
 	}
 	else
 	{
+		_putchar('0');
 		return (0);
 	}
 }
