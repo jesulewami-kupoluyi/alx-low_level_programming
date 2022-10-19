@@ -6,11 +6,11 @@
  */
 int print_sign(int n)
 {
-	if (c >= 'a' && c <= 'z')
+	if (n >= 'a' && n <= 'z')
 	{
 		return (1);
 	}
-	else if (c >= 'A' && c <= 'Z')
+	else if (n >= 'A' && n <= 'Z')
 	{
 		return (1);
 	}
