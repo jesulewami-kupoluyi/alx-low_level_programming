@@ -9,7 +9,7 @@ int _isalpha(int c)
 	int result = 0;
 	char n;
 
-	for (n = 'a'; n <= 'z'; n++)
+	for (n = 'a'; n <= 'z'; n = 'A'; n <= 'Z'; n++)
 	{
 		if (n == c)
 		 result = 1;
