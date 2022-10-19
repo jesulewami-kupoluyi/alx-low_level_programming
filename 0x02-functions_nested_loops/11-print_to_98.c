@@ -1,4 +1,5 @@
-#include "main.h"
+#include"main.h"
+#include<stdio.h>
 /**
  * print_to_98 - prints numbers to 98
  * @n: starting integer
@@ -9,9 +10,9 @@
  */
 void print_to_98(int n)
 {
-	if (n < 98)
+	if (n < 98)
 	{
-	while (n < 98)
+	while (n < 98)
 	{
 	printf("%d, ", n);
 	n++;
@@ -19,7 +20,7 @@ void print_to_98(int n)
 	}
 	else if (n > 98)
 	{
-		while (n > 98)
+		while (n > 98)
 		{
 		printf("%d, ", n);
 		n--;
