@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 /**
  * _isalpha -Entry program
  * @c: integar
@@ -6,7 +7,7 @@
  */
 int _isalpha(int c)
 {
-	if  (c = 'a'; c <= 'z'; n++)
+	if (c >= 'a'; c <= 'z')
 	{
 		 return (1);
 	}
