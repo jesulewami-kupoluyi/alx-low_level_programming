@@ -11,10 +11,11 @@ void rev_string(char *s)
 
 	while (s[pn] != '\0')
 		pn++;
+
 	while (px < pn--)
 	{
 		py = s[px];
-		s[px++] = s[pn++];
+		s[px++] = s[pn];
 		s[pn] = py;
 	}
 }
