@@ -1,4 +1,5 @@
 #include"main.h"
+#include<string.h>
 /**
  * _print_rev_recursion -a function that reverses a string
  * @s: character value
@@ -6,11 +7,14 @@
  */
 void _print_rev_recursion(char *s)
 {
-	char *s, n;
+	int length = strlen(s);
+	int mid = length / 2;
+	char temp;
 
-	for (n = s - 1; n >= 0; n--)
+	for (int i = 0; i < mid; i++)
 	{
-		_putchar(_print_rev_recursion(n));
+		temp = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = temp;
 	}
-	return (0);
 }

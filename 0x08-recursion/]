@@ -1,0 +1,14 @@
+#include"main.h"
+/**
+ * _print_rev_recursion -a function that reverses a string
+ * @s: character value
+ * return: positive value
+ */
+void _print_rev_recursion(char *s)
+{
+
+	for (s = -1; s >= 0; s--)
+	{
+		_putchar(s);
+	}
+}
