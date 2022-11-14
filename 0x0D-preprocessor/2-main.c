@@ -1,6 +1,10 @@
-#include<stdlib.h>
+#include<stdio.h>
+/**
+ * main - print file name.
+ * Return: 0 if true.
+ */
 int main(void)
 {
-	_putchar(filename);
-	return (main);
+	printf("%s\n", __FILE__);
+	return (0);
 }
