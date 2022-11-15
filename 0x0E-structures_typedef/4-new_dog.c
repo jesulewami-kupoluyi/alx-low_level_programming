@@ -1,23 +1,24 @@
-#include<stdlib.h>
-#include"dog.h"
+#include "dog.h"
+#include <stdlib.h>
+
 /**
- * _string -prints values
- * @newval: value in character
- * Return:0 if true
+ * _string - function holding the ptr
+ * @point: pointer holding the values
+ * Return: Always 0
  */
-char *_string(char *newval)
+char *_string(char *point)
 {
-	char ptr;
+	char *ptr;
 	int i;
 	int len = 0;
 
-	if (newval == NULL)
+	if (point == NULL)
 	{
 		return (NULL);
 	}
-	while (newval[len] != \o)
+	while (point[len] != '\0')
 	{
-		lent++;
+		len++;
 	}
 	ptr = malloc(sizeof(char) * (len + 1));
 	if (ptr == NULL)
@@ -26,11 +27,12 @@ char *_string(char *newval)
 	}
 	for (i = 0; point[i] != '\0'; i++)
 	{
-		ptr[i] = newval[i];
+		ptr[i] = point[i];
 	}
 	ptr[i] = '\0';
 	return (ptr);
 }
+
 /**
  * new_dog - Funcion to create a new dog
  * @name: initial name of dog
