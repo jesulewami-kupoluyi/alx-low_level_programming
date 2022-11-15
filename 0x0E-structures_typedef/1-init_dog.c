@@ -1,15 +1,17 @@
 #include<stdio.h>
-#include"main.h"
 #include"dog.h"
 /**
- * main -initializes a function call.
- * Return: 0 if true.
+ * init_dog -initializes a function call.
+ * @d: a pointer to a structure
+ * @name: character
+ * @age: float
+ * @owner: character
  */
-int main(void)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog my_dog;
-
-	init_dog(&my_dog, "Poppy", 3.5, "Bob");
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-	return (0);
+	if (d == NULL)
+		d = malloc(sizeof(struct dog));
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
